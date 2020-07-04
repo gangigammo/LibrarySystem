@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="(default package)" size="861,564" id="" metadata="uml2-1.0" initialized="true" scrolledY="47" tag="1000" key="32303037303533312D31303030204C6962726172792044656D6F312F796F7368696B6177612E6A2E6163">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.0 //@children.1/@sourceConnections.0 //@children.7/@sourceConnections.1" name="Member" location="225,60" size="116,247" id="/Member" runTimeClassModel="Name,showAllHoldBook(),search(Ljava.lang.String;),returnbook(ILjava.util.Calendar;),System(),Member(ILjava.lang.String;Ljava.lang.String;),isbookhold(I),Address,ID,changeState(Ljava.lang.String;),isbookhold(),borrowbook(ILjava.util.Calendar;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="78,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="ID" id="/Member#ID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="Name" id="/Member#Name"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="Address" id="/Member#Address"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="93,144">
+      <children xsi:type="editmodel:MethodEditModel" name="Member" id="/Member#Member(ILjava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="borrowbook" id="/Member#borrowbook(ILjava.util.Calendar;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="search" id="/Member#search(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="returnbook" id="/Member#returnbook(ILjava.util.Calendar;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isbookhold" id="/Member#isbookhold(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="changeState" id="/Member#changeState(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="showAllHoldBook" id="/Member#showAllHoldBook()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isbookhold" id="/Member#isbookhold()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="/Member@membergroup+/MemberList@memberList" source="//@children.0" target="//@children.2" targetEnd="//@children.0/@sourceConnections.0/@children.1" label="//@children.0/@sourceConnections.0/@children.2" sourceEnd="//@children.0/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="membergroup" location="116,176" id="/Member@membergroup+/MemberList@memberList|/Member#membergroup" attachSource="true" multiplicityLabel="//@children.0/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.0/@sourceConnections.0/@children.0/@children.0" aggregationKind="Aggregration" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - membergroup" location="348,219" size="62,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="348,243" size="5,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="memberList" location="0,71" id="/Member@membergroup+/MemberList@memberList|/MemberList#memberList" multiplicityLabel="//@children.0/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.0/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - memberList" location="660,219" size="53,10" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="697,243" size="16,10" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.0 //@children.5/@sourceConnections.0" name="State" location="255,360" size="92,75" id="/State" runTimeClassModel="limitweek,booklimit">
+    <children xsi:type="editmodel:CompartmentEditModel" size="69,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="limitweek" id="/State#limitweek"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="booklimit" id="/State#booklimit"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="/Member@member+/State@state" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.0/@children.1" label="//@children.1/@sourceConnections.0/@children.2" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="state" location="42,0" id="/Member@member+/State@state|/State#state" attachSource="true" multiplicityLabel="//@children.1/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.1/@sourceConnections.0/@children.0/@children.0" aggregationKind="Aggregration" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - state" location="304,343" size="28,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="274,343" size="16,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="member" location="72,247" id="/Member@member+/State@state|/Member#member" multiplicityLabel="//@children.1/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.1/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - member" location="304,314" size="40,10" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="274,314" size="16,10" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.0 //@children.7/@sourceConnections.0" name="MemberList" location="720,165" size="112,175" id="/MemberList" runTimeClassModel="main([Ljava.lang.String;),addMember(LMember;),retire(I),isexistID(I),getMember(I),changeAddress(ILjava.lang.String;),showMemberlist(),MemberList()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="89,126">
+      <children xsi:type="editmodel:MethodEditModel" name="MemberList" id="/MemberList#MemberList()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addMember" id="/MemberList#addMember(LMember;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="retire" id="/MemberList#retire(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="changeAddress" id="/MemberList#changeAddress(ILjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMember" id="/MemberList#getMember(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isexistID" id="/MemberList#isexistID(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="showMemberlist" id="/MemberList#showMemberlist()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="StateFactory" location="525,294" size="107,67" id="/StateFactory" runTimeClassModel="getState(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="60,18">
+      <children xsi:type="editmodel:MethodEditModel" name="getState" id="/StateFactory#getState(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="/Member@member+/StateFactory@stateFactory" source="//@children.3" target="//@children.0" targetEnd="//@children.3/@sourceConnections.0/@children.1" label="//@children.3/@sourceConnections.0/@children.2" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="stateFactory" location="0,6" id="/Member@member+/StateFactory@stateFactory|/StateFactory#stateFactory" attachSource="true" multiplicityLabel="//@children.3/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.3/@sourceConnections.0/@children.0/@children.0" aggregationKind="Aggregration" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - stateFactory" location="462,283" size="56,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="502,307" size="16,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="member" location="116,240" id="/Member@member+/StateFactory@stateFactory|/Member#member" multiplicityLabel="//@children.3/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.3/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - member" location="348,283" size="40,10" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="348,307" size="16,10" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="OokayamaState" location="45,383" size="122,139" id="/OokayamaState" runTimeClassModel="getLimitweek(),setLimitweek(I),getBooklimit(),OokayamaState(),setBooklimit(I)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="87,90">
+      <children xsi:type="editmodel:MethodEditModel" name="OokayamaState" id="/OokayamaState#OokayamaState()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLimitweek" id="/OokayamaState#setLimitweek(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setBooklimit" id="/OokayamaState#setBooklimit(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBooklimit" id="/OokayamaState#getBooklimit()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLimitweek" id="/OokayamaState#getLimitweek()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="/State&lt;-/OokayamaState" source="//@children.4" target="//@children.1" targetEnd="//@children.4/@sourceConnections.0/@children.1" sourceEnd="//@children.4/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="122,70" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,61"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="OtherState" location="425,405" size="101,139" id="/OtherState" runTimeClassModel="getLimitweek(),setLimitweek(I),OtherState(),getBooklimit(),setBooklimit(I)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="78,90">
+      <children xsi:type="editmodel:MethodEditModel" name="OtherState" id="/OtherState#OtherState()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBooklimit" id="/OtherState#getBooklimit()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLimitweek" id="/OtherState#setLimitweek(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setBooklimit" id="/OtherState#setBooklimit(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLimitweek" id="/OtherState#getLimitweek()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="/State&lt;-/OtherState" source="//@children.5" target="//@children.1" targetEnd="//@children.5/@sourceConnections.0/@children.1" sourceEnd="//@children.5/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,14" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="92,59"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Book" location="58,30" size="95,121" id="/Book" runTimeClassModel="Name,Book(ILjava.lang.String;),ID,exist">
+    <children xsi:type="editmodel:CompartmentEditModel" size="72,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="Name" id="/Book#Name"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="exist" id="/Book#exist"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="ID" id="/Book#ID"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="46,18">
+      <children xsi:type="editmodel:MethodEditModel" name="Book" id="/Book#Book(ILjava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="BookControl" location="425,-33" size="165,247" id="/BookControl" runTimeClassModel="deleteBook(I),searchBook(Ljava.lang.String;),searchnonBook(I),showAllBook(),borrowBook(I),searchBook(I),informnonexistbook(I),returnBook(I),addBook(ILjava.lang.String;),informexistBook(I)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="142,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="booklist" id="/BookControl#booklist"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="102,180">
+      <children xsi:type="editmodel:MethodEditModel" name="addBook" id="/BookControl#addBook(ILjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="borrowBook" id="/BookControl#borrowBook(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="deleteBook" id="/BookControl#deleteBook(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="informexistBook" id="/BookControl#informexistBook(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="informnonexistbook" id="/BookControl#informnonexistbook(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="returnBook" id="/BookControl#returnBook(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="searchBook" id="/BookControl#searchBook(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="searchnonBook" id="/BookControl#searchnonBook(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="showAllBook" id="/BookControl#showAllBook()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="searchBook" id="/BookControl#searchBook(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="/MemberList@memberList+/BookControl@bookControl" source="//@children.7" target="//@children.2" targetEnd="//@children.7/@sourceConnections.0/@children.1" label="//@children.7/@sourceConnections.0/@children.2" sourceEnd="//@children.7/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="bookControl" location="165,222" id="/MemberList@memberList+/BookControl@bookControl|/BookControl#bookControl" attachSource="true" multiplicityLabel="//@children.7/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.7/@sourceConnections.0/@children.0/@children.0" orderingLabel="//@children.7/@sourceConnections.0/@children.0/@children.2" aggregationKind="Aggregration" scopeKind="1" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - bookControl" location="597,162" size="55,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="597,196" size="16,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="{order}" location="597,172" size="27,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="memberList" location="0,24" id="/MemberList@memberList+/BookControl@bookControl|/MemberList#memberList" multiplicityLabel="//@children.7/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.7/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - memberList" location="660,172" size="53,10" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="697,196" size="16,10" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="/Member@member+/BookControl@bookControl" source="//@children.7" target="//@children.0" targetEnd="//@children.7/@sourceConnections.1/@children.1" label="//@children.7/@sourceConnections.1/@children.2" sourceEnd="//@children.7/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="bookControl" location="0,169" id="/Member@member+/BookControl@bookControl|/BookControl#bookControl" attachSource="true" multiplicityLabel="//@children.7/@sourceConnections.1/@children.0/@children.1" roleLabel="//@children.7/@sourceConnections.1/@children.0/@children.0" aggregationKind="Aggregration" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - bookControl" location="363,119" size="55,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="402,143" size="16,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="member" location="116,76" id="/Member@member+/BookControl@bookControl|/Member#member" multiplicityLabel="//@children.7/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.7/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - member" location="348,119" size="40,10" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="348,143" size="16,10" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="BookInformation" location="45,210" size="124,103" id="/BookInformation" runTimeClassModel="Book,BookInformation(ILjava.util.Calendar;),borrowday">
+    <children xsi:type="editmodel:CompartmentEditModel" size="98,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="Book" id="/BookInformation#Book"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="borrowday" id="/BookInformation#borrowday"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="90,18">
+      <children xsi:type="editmodel:MethodEditModel" name="BookInformation" id="/BookInformation#BookInformation(ILjava.util.Calendar;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
